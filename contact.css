@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #b5dcdb;
+}
+.main{
+    height: 100vh;
+    width: 86vw;
+    display: flex;
+    margin: 0px 7vw;
+    flex-direction: column;
+}
+
+.contact-sec{
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+.element{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vw;
+}
+.element h2{
+    font-size: 4.5vw;
+}
+.element h4{
+    font-size: 2.5vw;
+}
+#mail{
+    text-decoration: none;
+    color: #223b38;
+    font-weight: 600;
+    opacity: 0.6;
+    transition: 0.1s ease-in-out;
+    width: fit-content;
+    font-size: 2.5vw;
+}
+#mail:hover{
+    opacity: 1;
+}
+
+.links{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.links button{
+    background-color: #223b38;
+    height: 4vw;
+    width: 4vw;
+    border-radius: 100%;
+    color: wheat;
+    font-size: 2.5vw;
+    border: none;
+}
+
+.links button:hover{
+    cursor: pointer;
+    background-color: wheat;
+    color: #223b38;
+    transition: 0.15s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+    .contact-sec{
+        gap: 20px;
+    }
+    .element h2{
+        font-size: 8vw;
+    }
+    .element h4{
+        font-size: 4vw;
+    }
+    #mail{
+        font-size: 4vw;
+    }
+    .links{
+        gap: 2vw;
+    }
+
+    .links button{
+        height: 10vw;
+        width: 10vw;
+        font-size: 5.5vw;
+    }
+}
